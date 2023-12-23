@@ -3,7 +3,9 @@ import { mealData } from '../data/data';
 const Meal = ({ meals }) => {
   return (
     <section className="meal-section">
-      <h2 className="text-2xl font-bold mb-4">Delicious Meals</h2>
+      <h1 className="text-orange-500 font-bold text-2xl text-center py-2">
+    Our Meal
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {mealData.map((meal, index) => (
           <div key={index} className="meal-item rounded-lg overflow-hidden shadow-md">
